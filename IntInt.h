@@ -1,6 +1,6 @@
 #pragma once
 
-struct IntInt
+struct DistancePercent
 {
     int distance{};
     int percent{};

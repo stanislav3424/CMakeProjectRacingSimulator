@@ -9,11 +9,11 @@ void Air::calculation(int lengthTrack)
     }
     if (factor[0].percent < 0)
     {
-        lengthTrack = quadraticcÑlculations(lengthTrack);
+        lengthTrack = quadraticÑalculations(lengthTrack);
     }
     else
     {
-        lengthTrack = linearÑalculations(lengthTrack);
+        lengthTrack = linearCalculations(lengthTrack);
     }
     while (CurentLocation < lengthTrack)
     {
@@ -22,7 +22,7 @@ void Air::calculation(int lengthTrack)
     }
 }
 
-int Air::linearÑalculations(int lengthTrack)
+int Air::linearCalculations(int lengthTrack)
 {
     int discountPercent = 0;
 
@@ -51,7 +51,7 @@ int Air::linearÑalculations(int lengthTrack)
     return lengthTrack * (100 - discountPercent) / 100;
 }
 
-int Air::quadraticcÑlculations(int lengthTrack)
+int Air::quadraticÑalculations(int lengthTrack)
 {
     return lengthTrack * (100 - ((lengthTrack / factor[0].distance) * abs(factor[0].percent))) / 100;
 }

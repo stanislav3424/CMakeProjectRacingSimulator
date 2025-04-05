@@ -30,15 +30,14 @@ void GameRules::startGame()
             resultMap.insert({obj->getResult(lengthTrack), obj->getName()});
         }
     }
-    //Нужна сортировка для массива 
 }
 
-std::vector<StringBool> GameRules::getTransportsName()
+std::vector<StringBoolean> GameRules::getTransportsName()
 {
-    std::vector<StringBool> stringInt;
+    std::vector<StringBoolean> stringInt;
     for (auto* obj : transports)
     {
-        stringInt.push_back(StringBool(obj->getName(), obj->getActivation()));
+        stringInt.push_back(StringBoolean(obj->getName(), obj->getActivation()));
         //map.insert({obj->getName(), obj->getActivation()});
     }
     return stringInt;

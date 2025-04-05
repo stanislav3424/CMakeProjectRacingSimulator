@@ -6,16 +6,16 @@ void Lend::calculation(int lengthTrack)
     {
         return;
     }
-    int CurentLocation{};
+    int CurrentLocation{};
     int indexVector{};
-    int CurentStamina{stamina};
-    while (CurentLocation < lengthTrack)
+    int CurrentStamina{stamina};
+    while (CurrentLocation < lengthTrack)
     {
-        if (CurentStamina > 0)
+        if (CurrentStamina > 0)
         {
             ++time;
-            --CurentStamina;
-            CurentLocation += speed;
+            --CurrentStamina;
+            CurrentLocation += speed;
         }
         else
         {
@@ -24,7 +24,7 @@ void Lend::calculation(int lengthTrack)
             {
                 ++indexVector;
             }
-            CurentStamina = stamina;
+            CurrentStamina = stamina;
         }
     }
 }

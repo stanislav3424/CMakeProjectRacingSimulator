@@ -17,9 +17,7 @@ class Transport
     {
     }
 
-    ~Transport()
-    {
-    }
+    virtual ~Transport() = default;
 
     void setActivation();
     bool getActivation();

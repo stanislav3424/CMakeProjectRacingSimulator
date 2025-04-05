@@ -2,7 +2,7 @@
 
 #include <string>
 
-struct StringBool
+struct StringBoolean
 {
     std::string string{};
     bool boolean{};

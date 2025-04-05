@@ -8,19 +8,17 @@
 class Air : public Transport
 {
   private:
-    std::vector<IntInt> factor;
+    std::vector<DistancePercent> factor;
 
   public:
-    Air(std::string name, int speed, std::vector<IntInt> factor) : Transport(name, speed), factor(factor)
+    Air(std::string name, int speed, std::vector<DistancePercent> factor) : Transport(name, speed), factor(factor)
     {
     }
 
-    ~Air()
-    {
-    }
+    ~Air() = default;
 
   private:
     void calculation(int lengthTrack) override;
-    int linear—alculations(int lengthTrack);
-    int quadraticc—lculations(int lengthTrack);
+    int linearCalculations(int lengthTrack);
+    int quadratic—alculations(int lengthTrack);
 };

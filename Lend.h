@@ -20,9 +20,7 @@ class Lend : public Transport
         }
     }
 
-    ~Lend()
-    {
-    }
+    ~Lend() = default;
 
   private:
     void calculation(int lengthTrack) override;

@@ -32,7 +32,7 @@ class GameRules
         }
     }
 
-    std::vector<StringBool> getTransportsName();
+    std::vector<StringBoolean> getTransportsName();
     void startGame();
     std::multimap<int, std::string> getResult();
     bool updateTransports(int index);
