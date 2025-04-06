@@ -8,6 +8,10 @@ endif()
 
 project("CMakeProjectRacingSimulator")
 
+
+#set(CMAKE_WINDOWS_EXPORT_ALL_SYMBOLS ON)
+#add_library(Transport SHARED )
+
 add_executable(CMakeProjectRacingSimulator 
     "Transport.h" 
     "Transport.cpp" 
@@ -29,3 +33,5 @@ add_executable(CMakeProjectRacingSimulator
 if (CMAKE_VERSION VERSION_GREATER 3.12)
   set_property(TARGET CMakeProjectRacingSimulator PROPERTY CXX_STANDARD 20)
 endif()
+
+#target_link_libraries(CMakeProjectRacingSimulatorAndDll PRIVATE Transport)
